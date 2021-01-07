@@ -1,21 +1,11 @@
 import React, { useState } from "react";
 
 const Login = props => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
 
   function onSubmit(e) {
     e.preventDefault();
     props.navigate(`/`);
   }
-
-  function onChangeEmail(e) {
-    setEmail(e.value.target);
-  }
-  function onChangePassword(e) {
-    setPassword(e.value.target);
-  }
-
   return (
     <div>
       <form
